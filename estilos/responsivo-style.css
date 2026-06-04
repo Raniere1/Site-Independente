@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* NAVEGAÇÃO MOBILE - INDEX/ELENCO */
+  section#container-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span#btnMenu {
+    margin-top: -5px;
+    background-color: #6b0a05;
+    width: 100vw;
+    height: 35px;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+  }
+
+  menu#menu-mobile {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #ul-menu {
+    list-style: none;
+    width: 100%;
+    background-color: #0f0c0c;
+    padding: 5px;
+  }
+
+  menu#menu-mobile li {
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    box-shadow: rgb(159, 146, 146) 0px 2px 4px;
+  }
+
+  menu#menu-mobile a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 2px 0;
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .transition-fade header {
+    width: 100%;
+    height: 35vh;
+    background-size: contain;
+    background-position: center top;
+  }
+
+  /* ============INDEX================= */
+
+  /* CONTAINER JOGOS */
+
+  section#container-jogos {
+    flex-direction: column;
+
+    padding-bottom: 0px;
+  }
+
+  h2.h2-jogo-destaque {
+    font-size: 20px;
+  }
+
+  .p-proximo-jogo-destaque {
+    background-color: var(--cor-destaque-claro);
+    width: 115px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--cor-padrao01);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #020001;
+  }
+
+  .h2-proximo-jogo {
+    width: 100%;
+    text-align: center;
+  }
+
+  section#container-jogos p#p-data-do-jogo {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: 20px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-mandante-jogos {
+    height: 130px;
+    width: auto;
+    padding-left: 7%;
+  }
+
+  section#container-jogos .logo-visitante {
+    height: 100px;
+    width: auto;
+  }
+
+  .card-jogos,
+  .jogos-anteriores {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .jogos-passados {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .jogos-anteriores #h2-resultado {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .jogos-anteriores .h2-proximo-jogo {
+    padding-top: 10px;
+  }
+
+  .p-jogo-anterior-destaque {
+    background-color: var(--cor-destaque-claro);
+    width: 115px;
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--cor-padrao01);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #020001;
+  }
+
+  .jogos-anteriores p#p-resultado {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #cf2329;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /*-------------------Container Ranking----------------------*/
+
+  #ranking-container {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-padrao02);
+  }
+
+  #ranking-container .titulo-secao {
+    margin-bottom: 50px;
+    width: 170px;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .top-tres-pc {
+    display: flex;
+    flex-direction: column; /* Empilha os cards verticalmente */
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: stretch; /* Garante que todos ocupem a mesma largura */
+  }
+
+  .card-destaque.ouro {
+    order: 1; /* O 1º lugar vai para o topo */
+  }
+
+  .card-destaque.prata {
+    order: 2; /* O 2º lugar vem logo abaixo */
+  }
+
+  .card-destaque.bronze {
+    order: 3; /* O 3º lugar fica por último */
+  }
+
+  .card-destaque {
+    display: flex; /* Muda de coluna para linha no mobile */
+    align-items: center;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100% !important; /* Força todos a terem o mesmo tamanho */
+    transform: none !important; /* Remove o aumento de tamanho do PC */
+    margin: 0 !important;
+    border-bottom: none; /* Remove a borda grossa de baixo do PC */
+    border-left: 5px solid #ddd; /* Adiciona destaque lateral mais sutil */
+  }
+
+  /* Identificação por cores nas bordas laterais */
+  .card-destaque.ouro {
+    border-left-color: gold;
+  }
+  .card-destaque.prata {
+    border-left-color: silver;
+  }
+  .card-destaque.bronze {
+    border-left-color: #cd7f32;
+  }
+
+  .card-destaque img {
+    width: 60px !important; /* Tamanho uniforme para todas as fotos */
+    height: 60px !important;
+    border-radius: 50%;
+    margin: 0 15px 0 0 !important; /* Ajusta a margem para ficar ao lado do texto */
+  }
+
+  .coroa {
+    position: static; /* Remove a posição flutuante do PC */
+    transform: none;
+    width: 35px;
+    font-size: 0.9rem;
+    background: none;
+    color: var(--cor-padrao03);
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  .card-destaque h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    flex-grow: 1; /* Faz o nome ocupar o espaço central */
+    text-align: left;
+  }
+
+  .stats-destaque {
+    flex-direction: column; /* Empilha gols e assistências para economizar espaço */
+    align-items: flex-end;
+    font-size: 0.85rem;
+    gap: 2px;
+  }
+
+  /* Ajuste da lista (posições 4º e 5º) para seguir o mesmo padrão */
+  .ranking-lista-pc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 0px 5px 0px 5px;
+  }
+
+  .linha-ranking {
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+
+  .foto-container {
+    position: relative;
+    width: 100%;
+  }
+
+
+/*--------------------Container Ranking------------------------*/
+
+  /*=====================PAG ELENCO=================== */
+
+  .fileira-jogadores {
+    display: flex; /* Ativa o alinhamento lado a lado */
+    flex-wrap: wrap; /* Se não couber na tela, ele pula para a linha de baixo */
+    justify-content: center; /* Centraliza os jogadores na tela */
+    gap: 15px; /* Cria o espaço entre um jogador e outro */
+    padding: 10px;
+  }
+
+  /* O card individual */
+  .card-jogador {
+    flex: 0 1 calc(50% - 10px);
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    min-width: 160px;
+  }
+
+  .foto-container {
+    position: relative; /* Pai relativo para a tarja se prender a ele */
+    overflow: hidden;
+  }
+
+  .info-tarja {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor-destaque);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    max-height: 70px;
+    height: auto;
+
+    transition:
+      max-height 0.5s ease,
+      padding 0.5s ease;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .caracteristicas-atleta {
+    opacity: 0;
+    transition: opacity 0.8s ease 0.2s;
+    margin-top: 15px; /* Espaço após o número */
+    padding: 0 15px; /* Respiro nas laterais */
+    text-align: left; /* Alinhamento das infos */
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  .caracteristicas-atleta p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: normal; /* Para destacar o <strong> */
+  }
+
+  .card-jogador.card-levantado .info-tarja {
+    max-height: 300px !important;
+    padding: 20px 0; /* Aumenta o respiro interno */
+  }
+
+  /* Quando passar o mouse no CARD, as características APARECEM */
+  .card-jogador.card-levantado .caracteristicas-atleta {
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+    max-height: 300px;
+    transition:
+      max-height 1s ease,
+      padding 0.5s ease;
+  }
+
+  .card-jogador.card-levantado {
+    transform: translateY(-15px); /* O card sobe um pouco no clique */
+    transition: transform 0s ease;
+  }
+
+  .foto-container img {
+    width: 100%;
+    display: block;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-jogador:hover img {
+    transform: scale(01.03);
+  }
+
+  .info-tarja .nome {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  .info-tarja .numero {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+
+  /* Título da seção */
+  #titulo-secao {
+    border-left: 5px solid #c61212;
+    padding-left: 15px;
+    margin: 40px 0 20px 50px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+}
