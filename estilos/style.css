@@ -37,29 +37,39 @@ html.is-leaving .transition-fade {
   transform: translateY(-20px);
 }
 
+/* LOGO COMPARTILAHDO */
+
+div#div-logo{
+  margin-left: 20px;
+}
+
 /* NAVEGAÇÃO COMPARTILHADA */
 section#container-nav {
   width: 100%;
   display: flex;
   padding-top: 5px;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
 }
 
 nav {
+
+  position: fixed;
+  top: 5px;
+  left: 65vh;
+  
+  z-index: 1000;
   padding-top: 2px;
   display: flex;
   gap: 1.2vw;
   flex-direction: row;
   background-color: #330704;
   justify-content: center;
+
   width: 40vw;
   border-radius: 20px;
   height: 50px;
+
+  box-shadow: black 1px 1px 5px 2px;
+  
 }
 
 nav > a {
@@ -91,7 +101,7 @@ menu#menu-mobile {
    ESTILOS EXCLUSIVOS DA HOME (index.html)
    ========================================== */
 
-/* O header com a foto só vai funcionar se estiver na Home */
+/* TRANSITION */
 .transition-fade header {
   height: 100vh;
   width: 100%;
@@ -112,6 +122,38 @@ main.transition-fade {
   background-color: whitesmoke;
 }
 
+/* BOTAO CONTATO */
+
+a#btn-contato{
+  background-color: #330704;
+  color: white;
+  text-decoration: none;
+
+  width: 30vh;
+  height: 50px;
+  margin-left: 78%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  cursor: pointer;
+
+  font-size: 2.1vh;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  border: none;
+  box-shadow: black 1px 1px 5px 2px;
+  transition: all .5s;
+}
+
+a#btn-contato:hover{
+  background-color: whitesmoke;
+  color: #6a130e;
+}
+
+/* CONTAINER JOGOS */
 section#container-jogos {
   width: 100%;
   display: flex;

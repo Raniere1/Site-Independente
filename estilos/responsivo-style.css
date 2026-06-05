@@ -7,6 +7,14 @@
     overflow-x: hidden;
   }
 
+  #div-logo{
+    display: none;
+  }
+
+  a#btn-contato{
+    display: none;
+  }
+
   /* NAVEGAÇÃO MOBILE - INDEX/ELENCO */
   section#container-nav {
     display: flex;
