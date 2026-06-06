@@ -136,17 +136,17 @@ section#container-principal{
 #box-titulo{
   display: flex;
   flex-direction: row;
-  font-size: 20vh;
+  font-size: 30vh;
   font-weight: 500;
 
   color: white;
 
-  margin: 20px;
 }
 
 #box-titulo > h1{
   transition: all .5s;
   margin-left: 30px ;
+  margin-right: 30px ;
 
   text-shadow: black 4px 3px 6px;
   
