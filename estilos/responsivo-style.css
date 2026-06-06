@@ -102,9 +102,15 @@ img#img-logo{
 
   /* ============INDEX================= */
 
+  /* CONTAINER PRINCIPAL DESKTOP */
+  
+  section#container-principal{
+    display: none;
+  }
+
   /* CONTAINER PRINCIPAL MOBILE */
 
-section#container-principal{
+section#container-principal-mobile{
   display: flex;
   background-color: #1b1313;
   padding: 3px;
