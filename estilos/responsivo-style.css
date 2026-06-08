@@ -142,11 +142,12 @@ div#div-imagens2{
   section#container-jogos {
     flex-direction: column;
 
+    padding-top: 20px;
     padding-bottom: 0px;
   }
 
   h2.h2-jogo-destaque {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .p-proximo-jogo-destaque {
@@ -234,13 +235,14 @@ div#div-imagens2{
   #ranking-container {
     width: 100%;
     padding: 10px;
+    padding-top: 0px;
     background-color: var(--cor-padrao02);
   }
 
   #ranking-container .titulo-secao {
     margin-bottom: 50px;
     width: 170px;
-    font-size: 20px;
+    font-size: 1.1rem;
     margin-left: 20px;
   }
 
@@ -265,13 +267,13 @@ div#div-imagens2{
   }
 
   .card-destaque {
-    display: flex; /* Muda de coluna para linha no mobile */
+    display: flex; 
     align-items: center;
     background: white;
     padding: 10px 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100% !important; /* Força todos a terem o mesmo tamanho */
+    width: 100% !important; 
     transform: none !important; /* Remove o aumento de tamanho do PC */
     margin: 0 !important;
     border-bottom: none; /* Remove a borda grossa de baixo do PC */

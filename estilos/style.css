@@ -22,9 +22,7 @@ body {
 
 /* CONTAINER GLOBAL DO SWUP (FADE SUAVE) */
 .transition-fade {
-  transition:
-    opacity 0.4s ease-in-out,
-    transform 0.4s ease-in-out;
+  transition:opacity 0.4s ease-in-out,transform 0.4s ease-in-out;
   width: 100%;
 }
 
@@ -37,6 +35,7 @@ html.is-leaving .transition-fade {
   opacity: 0;
   transform: translateY(-20px);
 }
+
 
 /* LOGO COMPARTILAHDO */
 
