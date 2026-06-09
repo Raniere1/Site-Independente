@@ -156,6 +156,7 @@ section#container-principal{
   transform: scale(1.2);
 
   color: #cd7f32;
+  cursor: pointer;
 }
 
 #box-subtitulo{
@@ -266,6 +267,18 @@ section#container-jogos {
   border-radius: 2px;
 }
 
+#p-proximo-jogo-destaque {
+    background-color: var(--cor-destaque-claro);
+    width: 115px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--cor-padrao01);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #020001;
+  }
+
+
 .card-jogos p {
   margin: 10px 20px 20px 20px;
 }
@@ -285,6 +298,18 @@ section#container-jogos {
   font-size: 20px;
   margin: 10px;
 }
+
+#p-jogo-anterior-destaque {
+    background-color: var(--cor-destaque-claro);
+    width: 115px;
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--cor-padrao01);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #020001;
+  }
+  
 h2#h2-resultado {
   margin-top: 1px;
   margin-left: 130px;
@@ -294,6 +319,7 @@ h2#h2-resultado {
   font-size: medium;
   margin-left: 19px;
 }
+
 p#p-resultado {
   color: #cf2329;
   font-size: 40px;
@@ -442,6 +468,47 @@ p#p-resultado {
 /* Efeito de Hover */
 .card-destaque:hover {
   transform: translateY(-10px) scale(1.15); /* No PC, o card "pula" ao passar o mouse */
+}
+
+/* CONTAINER HISTÓRIA CLUBE */
+
+article#container-historia{
+  background-color: #330704;
+}
+
+#box-fundo{
+  background-image: linear-gradient(#2d2d2dd3), url("../imagens/fotos-elenco/elenco.jpeg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;  
+}
+
+
+#box-fundo > h2{
+  color: white;
+  font-size: 5rem;
+  margin: 40px;
+  text-shadow: rgb(3, 3, 3) 4px 2px 3px;
+  font-weight: bold;
+}
+
+#container-text{
+  display: flex;
+}
+
+div#div-text{
+  
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
 }
 
 /* ==========================================

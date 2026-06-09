@@ -150,7 +150,7 @@ div#div-imagens2{
     font-size: 1rem;
   }
 
-  .p-proximo-jogo-destaque {
+  #p-proximo-jogo-destaque {
     background-color: var(--cor-destaque-claro);
     width: 115px;
     height: 30px;
@@ -210,7 +210,7 @@ div#div-imagens2{
     padding-top: 10px;
   }
 
-  .p-jogo-anterior-destaque {
+  #p-jogo-anterior-destaque {
     background-color: var(--cor-destaque-claro);
     width: 115px;
     height: 50px;
@@ -282,24 +282,24 @@ div#div-imagens2{
 
   /* Identificação por cores nas bordas laterais */
   .card-destaque.ouro {
-    border-left-color: gold;
+    border-left-color: #800404;
   }
   .card-destaque.prata {
-    border-left-color: silver;
+    border-left-color: #800404;
   }
   .card-destaque.bronze {
-    border-left-color: #cd7f32;
+    border-left-color: #800404;
   }
 
   .card-destaque img {
-    width: 60px !important; /* Tamanho uniforme para todas as fotos */
+    width: 60px !important; 
     height: 60px !important;
     border-radius: 50%;
-    margin: 0 15px 0 0 !important; /* Ajusta a margem para ficar ao lado do texto */
+    margin: 0 15px 0 0 !important; 
   }
 
   .coroa {
-    position: static; /* Remove a posição flutuante do PC */
+    position: static; 
     transform: none;
     width: 35px;
     font-size: 0.9rem;
@@ -312,9 +312,20 @@ div#div-imagens2{
   .card-destaque h3 {
     font-size: 1.1rem;
     margin: 0;
-    flex-grow: 1; /* Faz o nome ocupar o espaço central */
+    flex-grow: 1; 
     text-align: left;
+    
   }
+
+  .card-destaque a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* .card-destaque:active{
+  
+    background-color: #6b0a05d8;
+  } */
 
   .stats-destaque {
     flex-direction: column; /* Empilha gols e assistências para economizar espaço */
