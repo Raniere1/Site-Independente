@@ -72,13 +72,13 @@ nav {
   flex-direction: row;
   justify-content: center;
 
-  width: 40vw;
+  width:46vw;
   height: 50px;
 
   position: fixed;
   z-index: 1000;
   top: 5px;
-  left: 500px;
+  left: 435px;
   gap: 1.2vw;
 
   padding-top: 2px;
@@ -323,7 +323,7 @@ p#p-resultado {
   margin-left: 30px;
 }
 
-/* RANKING */
+/* CONTAINER RANKING */
 
 #ranking-container {
   width: 100%;
@@ -495,13 +495,10 @@ article#container-historia {
 #container-texto {
   display: flex;
   background-color: white;
-
   flex-direction: column;
-
   margin-left: 10%;
   margin-right: 10%;
-
-  height: 100vh;
+  padding-bottom: 20px;
 }
 
 #container-texto > h3 {
@@ -513,32 +510,43 @@ article#container-historia {
   line-height: 72px;
 }
 
-div#div-texto {
+div.div-texto {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: rgb(88, 12, 12); */
   width: 100%;
   margin-top: 20px;
   margin-left: 20px;
 }
 
-div#div-texto > span {
-  flex-direction: row;
+div.div-texto {
+  display: block;     
+  clear: both; 
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
-div#div-texto > span > p {
-  margin: 0px 20px;
-  align-items: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-div#div-texto > img {
-  /* width:300px; */
-  height: 30vh;
+.imagens-container-historia, #img-elenco-trofeu {
+  float: left;            
+  width: 40%;             
+     
+  height: 50vh;        
+  margin-right: 25px;   
+  margin-bottom: 15px; 
   background-color: #020001;
 }
+
+.p-texto {
+ font-size: 1.5rem;
+  text-indent: 1em;   
+  text-align: justify; 
+  margin-bottom: 15px;
+}
+
+
+
 
 /* ==========================================
    ESTILOS EXCLUSIVOS DO ELENCO (elenco.html)
@@ -668,10 +676,9 @@ div#div-texto > img {
 
 footer {
   width: 100%;
-  background-color: #290f0f;
+  background-color: #6a130e;
   color: rgb(226, 223, 223);
   padding: 20px 0;
-  margin-top: 50px;
   font-size: 1rem;
   text-align: center;
 }
