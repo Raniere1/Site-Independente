@@ -505,19 +505,11 @@ article#container-historia {
   margin-top: 50px;
   margin-left: 20px;
   font-size: 9vh;
-  font-family: TuskerGrotesk5, "TuskerGrotesk5 Fallback";
+  font-family: var(--font-titulo);
   font-weight: 600;
   line-height: 72px;
 }
 
-div.div-texto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  margin-top: 20px;
-  margin-left: 20px;
-}
 
 div.div-texto {
   display: block;     
@@ -543,9 +535,8 @@ div.div-texto {
   text-indent: 1em;   
   text-align: justify; 
   margin-bottom: 15px;
+  margin-right: 10px;
 }
-
-
 
 
 /* ==========================================

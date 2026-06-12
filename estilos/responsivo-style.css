@@ -392,9 +392,8 @@
 
   #container-texto > h3 {
     margin-top: 40px;
-    margin-left: 10px;
+    margin: 10px 10px;
     font-size: 1.8rem;
-    font-family: TuskerGrotesk5, "TuskerGrotesk5 Fallback";
     font-weight: bolder;
     line-height: inherit;
   }
@@ -419,12 +418,13 @@
     display: block;
     width: 300px;
     height: 200px;
-    margin: 0 20px 20px -5px;
+    margin: 0 20px 20px 12.5px;
     background-color: #020001;
   }
 
   .p-texto {
-    margin: 0 20px 15px -15px;
+    margin: 0 20px 15px 12.5px;
+    width: 300px;
     font-size: 1rem;
     text-indent: 1.5em;
     text-align: justify;
